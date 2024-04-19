@@ -1,0 +1,173 @@
+body {
+  background-image: url('../Imagenes/Panel 2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Estilos para pantallas grandes (PC) */
+.contenedor-principal {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 80%; 
+  margin: auto; 
+}
+
+.contenedor-texto {
+  text-align: left; 
+  flex: 1; /* Permite que el contenedor del texto crezca */
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.formulario {
+  padding-top: -80px;
+  flex: 1; /* Permite que el contenedor del formulario crezca */
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.logo {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 30px;
+}
+
+.logo-encima {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; 
+ margin-top: -60px;
+  margin-bottom: -20px; 
+}
+
+/* Estilos para pantallas pequeñas (teléfonos o tabletas) */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  .contenedor-texto,
+  .formulario {
+    width: 90%; 
+    justify-content: center; 
+    text-align: center; 
+    margin-top: 10px; 
+    padding-bottom: 50px;
+  
+  }
+
+
+  .formulario {
+    order: 2; 
+  }
+}
+
+.fixed-body {
+  position: fixed;
+  width: 100%;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+
+.form-control {
+  background-color: rgba(58, 63, 53, 0.2); 
+  border-radius: 10px; 
+  margin-bottom: 10px; 
+}
+.form-control:focus {
+  background-color: rgba(58, 63, 53, 0.2); 
+  outline: none; 
+  box-shadow: 0 0 0 0.2rem rgba(58, 63, 53, 0.25); 
+}
+
+.form-control, .btn {
+  background-color: rgba(58, 63, 53, 0.2); 
+  border-radius: 10px;
+  margin-bottom: 10px; 
+  border: none;
+}
+
+.btn {
+  background-color: #3A3F35; 
+  border: none;
+  box-shadow:inset;
+
+}
+
+.btn:hover {
+  background-color: rgba(58, 63, 53, 0.2); /* color de seleccion #3A3F35 con 20% de transparencia */
+}
+
+a {
+  color: #3A3F35; /* Cambia el color de olvido su contraseña a #3A3F35 */
+}
+
+.contenedorFoto {
+  width: 300px;
+  margin: auto; 
+}
+
+.contenedor-principal {
+  position: relative; 
+}
+
+.contenedorFoto {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: -1; /* Asegura que la imagen se muestre detrás de los otros elementos */
+}
+
+.contenedorFoto img {
+  max-width: 100%; /* Asegura que la imagen sea responsiva */
+}
+
+
+
+.contenedor-texto, .formulario {
+  order: 0; /* Ordena el contenedor de texto y el botón de registro antes de la imagen */
+}
+
+@media (min-width: 768px) {
+  .contenedor-principal {
+    flex-direction: row; /* Cambia la dirección a fila en resoluciones más grandes */
+  }
+
+
+}
+/* Estilos para pantallas pequeñas (teléfonos o tabletas) */
+@media (max-width: 	960px) {
+  .contenedorFoto {
+    position: absolute;
+    top: 20%; 
+    opacity: 0.2; 
+    width: 150px;
+
+  }
+}
+
+/* Cambia el color de fondo y el color del texto de los campos de entrada durante el autocompletado */
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover, 
+.form-control:-webkit-autofill:focus, 
+.form-control:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(58, 63, 53, 0.2) inset !important;
+  color: #382424 !important;
+}
+
+

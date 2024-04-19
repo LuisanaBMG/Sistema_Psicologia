@@ -1,0 +1,133 @@
+body {
+    background-image: url('../Imagenes/fondo\ registrar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.navbar-custom {
+    background-color: #788368;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.contenedor-texto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario-registro {
+    width: 100%;
+    max-width: 400px;
+}
+.logo {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 30px;
+  }
+  .logo-encima {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px; /* Ajusta el tamaño de tu logo */
+   margin-top: -40px;
+    margin-bottom: -20px; /* Espacio entre el logo y el formulario */
+  }
+@media (min-width: 768px) {
+    .contenedor-principal {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    .contenedor-texto {
+        text-align: left;
+        margin-right: 40px;
+    }
+
+    .formulario-registro {
+        width: 400px;
+    }
+}
+.titulo-registro {
+    font-size: 28px;
+  }
+  
+
+.fixed-body {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: rgba(208, 208, 189, 0.2); /* #D0D0BD con 20% de transparencia */
+    border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+.form-control:focus {
+    background-color: rgba(208, 208, 189, 0.2); /* #D0D0BD con 20% de transparencia */
+    outline: none; /* Elimina el borde de selección predeterminado */
+    box-shadow: 0 0 0 0.2rem rgba(208, 208, 189, 0.2); /* Añade un borde de selección personalizado*/
+}
+
+.form-control, .btn {
+    background-color: rgba(208, 208, 189, 0.2);
+    border-radius: 10px;
+    margin-bottom: 10px; 
+    border: none;
+}
+
+.btn {
+    background-color: #D0D0BD; 
+    border: none;
+    box-shadow:inset;
+    color: black;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgba(208, 208, 189, 0.2); /* color de seleccion #D0D0BD con 20% de transparencia */
+}
+
+a {
+    color: #D0D0BD; /* Cambia el color de olvido su contraseña a #D0D0BD */
+}
+
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover, 
+.form-control:-webkit-autofill:focus, 
+.form-control:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgba(208, 208, 189, 0.2) inset !important;
+    color: #382424 !important;
+}
+
+@media (max-width: 960px) {
+    .contenedor-principal {
+        flex-direction: column; 
+        width: 100%;
+    }
+}
