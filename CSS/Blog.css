@@ -1,0 +1,305 @@
+#seccion2 { background-color: #F3EEEA; }
+#seccion3 { background-color: #EBE3D5; }
+#seccion4 { background-color: #B0A695; }
+#seccion5 { background-color: #F3EEEA; }
+#Footer { background-color: #776B5D; }
+
+
+.seccion-pequena { background-color: #FFFFFF; }
+
+ html, body {
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+
+#seccion1 {
+    background-color: #F3EEEA;
+    background-image: url('../img/imagenblog.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#seccion2 {
+    min-height: 100vh;
+    max-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#seccion2 div {
+    text-align: justify;
+    flex: 1 0 300px;
+}
+
+#seccion2 img {
+    width: 350px;
+    height: auto;
+}
+
+#seccion2 .text-container {
+    max-width: 70ch;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #seccion2 div {
+        flex: 1 0 100%; 
+    }
+
+    #seccion2 .text-container {
+        max-width: 100%; 
+    }
+}
+
+
+
+#seccion4 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+#seccion4 .content-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#seccion4 .content-container h1 {
+    margin-top: 2rem; /* Añade un margen inferior al título para separarlo del contenido siguiente */
+}
+
+#seccion4 .content-container .container {
+    flex-grow: 1; /* Permite que el contenedor del contenido crezca para ocupar el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+
+
+  #seccion5 {
+    min-height: 100vh; 
+    max-height: fit-content; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.seccion-pequena {
+    background-color: #FFFFFF;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.seccion-pequena p {
+    font-size: 0.8rem;
+    margin: 0 auto;
+    max-width: 80%; 
+}
+
+/*Otros*/
+.contenedor-principal {
+    min-height: 90vh; 
+    
+}
+
+.contenedor-imagen {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100%; 
+}
+
+.imagen-responsiva {
+ max-width: 100%; 
+ height: auto; 
+ margin-bottom: 20px; 
+ background-color: transparent; 
+}
+
+.contenedor-titulo {
+ position: relative;
+
+}
+
+.text-container, .image-container {
+    margin: 0 auto; 
+    max-width: 80%; 
+    
+}
+
+/* Asegura que el icono se coloque debajo de la imagen en resoluciones más bajas */
+@media (max-width: 768px) {
+    .icono-encima-titulo {
+        position: static;
+        margin-top: 20px; 
+        align-items: center; 
+        transform: translateX(50%);
+
+    }
+}
+
+/* Justificar el texto del párrafo */
+.lead {
+    text-align: justify;
+}
+
+/* Centrar el título <h1> en resoluciones más pequeñas */
+@media (max-width: 576px) {
+    .titulo-modalidad {
+        text-align: center;
+    }
+}
+
+body .btn {
+    background-color: #3A3F35; 
+    border: none;
+    color: #FFFFFF; 
+}
+
+body .btn:hover {
+    background-color: #D0D0BD;
+}
+
+/* Mantiene el color de fondo cuando se hace clic */
+#seccion1 .btn:active, .btn:focus {
+    background-color: #3A3F35 ;
+    box-shadow: none; 
+    
+}
+#seccion2 .btn:active, .btn:focus {
+    background-color: #3A3F35 ;
+    box-shadow: none;
+    
+}
+#seccion3 .btn:active, .btn:focus {
+    color: white;
+    background-color: #3A3F35;
+    box-shadow: none;
+}
+
+#seccion5 .btn:active, .btn:focus {
+    background-color: #3A3F35 ;
+    box-shadow: none; 
+    
+}
+/* Mantiene el color de fondo cuando se hace clic */
+
+/*Otros*/
+
+/*navbar css */
+.navbar-custom {
+    background-color: #3A3F35;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 30px;
+}
+
+.white-icon .navbar-toggler-icon {
+    filter: invert(1);
+
+}
+
+/*navbar css */
+
+
+.btn {
+    background-color: #3A3F35;
+    border: none;
+}
+
+
+/*cards seccion 3 */
+.tarjeta {
+    margin: 0 auto;
+    background-color: #D9D9D9; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%; 
+    height: auto; 
+    box-sizing: border-box; 
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 768px) {
+    .tarjeta {
+        width: 435px; 
+        height: 250px; 
+    }
+}
+@media (min-width: 1024px) {
+    .tarjeta {
+        width: 435px; 
+        height: 250px; 
+    }
+}
+
+
+
+/* Estilos para el cuerpo de la tarjeta */
+.cuerpo-tarjeta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+
+/* Estilos para el título y el texto de las tarjetas */
+.titulo-tarjeta, .texto-tarjeta {
+    color: #000000; 
+}
+
+
+/* Estilos para el botón dentro de la tarjeta */
+.saber-mas {
+    background-color: #3A3F35; 
+    border-color: #3A3F35; 
+    color: #FFFFFF; 
+}
+.saber-mas:hover  {
+    color: white; 
+}
+
+
+/*cards seccion 3 */
+
+.d-item{
+ height: 600px;
+}
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
