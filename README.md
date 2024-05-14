@@ -14,4 +14,4 @@ La Emoción Vital es una capacidad fundamental que nos permite experimentar y ex
 - [@lcondep3](https://github.com/lcondep3)
 - [@AlejandraH17](https://github.com/AlejandraH17)
 - [@Ariannymg](https://github.com/Ariannymg)
-- 
+
