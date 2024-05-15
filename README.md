@@ -20,7 +20,7 @@ La Emoción Vital es una capacidad fundamental que nos permite experimentar y ex
 
 ## Color Reference
 
-| Color             | Hex                                                                |
+| Color             | Código de color                                                               |
 | ----------------- | ------------------------------------------------------------------ |
 | Color 1 | ![#F3EEEA](https://colorhunt.co/palette/f3eeeaebe3d5b0a695776b5d) #F3EEEA |
 | Color 2 | ![#EBE3D5](https://colorhunt.co/palette/f3eeeaebe3d5b0a695776b5d) #EBE3D5 |
