@@ -5,8 +5,6 @@ Sistema web de Psicología Clínica, que permite agendar citas para consultas. E
 
 La Emoción Vital es una capacidad fundamental que nos permite experimentar y expresar emociones de manera auténtica y profunda.
 
-
-< p  alinear = " centro " >
 ![Logo] (https://iaelaonline.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-14-at-3.36.23-PM.jpeg)
 
 
